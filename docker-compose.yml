@@ -8,6 +8,8 @@ services:
       - db
     environment:
       - DATABASE_URL=mysql://user:password@db:3306/mydatabase
+      - NITRO_HOST=0.0.0.0
+      - NITRO_PORT=3000
 
   db:
     image: mysql:8

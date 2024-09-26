@@ -1,5 +1,5 @@
 # Utiliser une image Node.js officielle comme image de base
-FROM node:14
+FROM node:18
 
 # Définir le répertoire de travail dans le conteneur
 WORKDIR /app
@@ -20,4 +20,4 @@ RUN npm run build
 EXPOSE 3000
 
 # Définir la commande pour démarrer l'application
-CMD [ "npm", "run", "start" ]
+CMD [ "node", ".output/server/index.mjs" ]
