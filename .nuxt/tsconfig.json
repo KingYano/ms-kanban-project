@@ -65,6 +65,9 @@
       "assets": [
         "../frontend/assets"
       ],
+      "assets/*": [
+        "../frontend/assets/*"
+      ],
       "public": [
         "../frontend/public"
       ],
