@@ -39,16 +39,16 @@
         "../node_modules/nuxt"
       ],
       "~": [
-        ".."
+        "../frontend"
       ],
       "~/*": [
-        "../*"
+        "../frontend/*"
       ],
       "@": [
-        ".."
+        "../frontend"
       ],
       "@/*": [
-        "../*"
+        "../frontend/*"
       ],
       "~~": [
         ".."
@@ -63,13 +63,10 @@
         "../*"
       ],
       "assets": [
-        "../assets"
+        "../frontend/assets"
       ],
       "public": [
-        "../public"
-      ],
-      "public/*": [
-        "../public/*"
+        "../frontend/public"
       ],
       "#app": [
         "../node_modules/nuxt/dist/app"
@@ -131,6 +128,7 @@
     "./nuxt.d.ts",
     "../.config/nuxt.*",
     "../**/*",
+    "../frontend/**/*",
     "../node_modules/@nuxt/devtools/runtime",
     "../node_modules/@nuxt/devtools/dist/runtime",
     "../node_modules/@nuxt/telemetry/runtime",
