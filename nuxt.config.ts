@@ -4,11 +4,13 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   srcDir: 'frontend/',
 
+  modules: ['@nuxtjs/tailwindcss'],
+
   vite: {
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@use "@/assets/styles/main.scss" as *;'
+          additionalData: '@use "@/assets/scss/main.scss" as *;'
         }
       }
     }

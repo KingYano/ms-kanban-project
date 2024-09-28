@@ -8,5 +8,6 @@
 </script>
 
 <style lang="scss">
-  @use '@/assets/styles/main.scss' as *;
+  @use '@/assets/scss/main.scss' as *;
+  @import '@/assets/css/tailwind.css';
 </style>
