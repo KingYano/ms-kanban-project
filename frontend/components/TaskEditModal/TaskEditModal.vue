@@ -11,7 +11,7 @@
 </template>
 
 <script lang="ts" setup>
-import { useKanban } from '@/composables/composable';
+import { useKanban } from '@/frontend/composables/composable';
 import { computed } from 'vue';
 
 const { editingTask, updateTask } = useKanban();

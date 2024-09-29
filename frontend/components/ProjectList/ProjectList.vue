@@ -3,7 +3,7 @@
     <h2>Mes projets :</h2>
     <div class="add-project">
       <input v-model="newProjectName" placeholder="Nouveau projet" />
-      <button @click="addProject">Ajouter</button>
+      <Button @click="addProject" >Ajouter</Button>
     </div>
     <div
         v-for="(project, index) in projects"
@@ -21,8 +21,11 @@
 </template>
 
 <script lang="ts" setup>
-import { Project } from '@/types/type';
-import { useKanban } from '@/composables/composable';
+import { type Project } from '@/frontend/types/type';
+import { useKanban } from '@/frontend/composables/composable';
+
+import { Button } from '@/components/ui/button'
+
 
 const { projects, selectedProject, newProjectName, addProject } = useKanban();
 

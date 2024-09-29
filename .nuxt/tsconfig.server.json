@@ -17,12 +17,12 @@
         "./types/nitro-imports"
       ],
       "~/*": [
-        "../frontend/*",
-        "../frontend/*"
+        "../*",
+        "../*"
       ],
       "@/*": [
-        "../frontend/*",
-        "../frontend/*"
+        "../*",
+        "../*"
       ],
       "~~/*": [
         "../*",
@@ -72,10 +72,10 @@
         "../node_modules/nuxt/dist/core/runtime/nitro/paths"
       ],
       "~": [
-        "../frontend"
+        "./.."
       ],
       "@": [
-        "../frontend"
+        "./.."
       ],
       "~~": [
         "./.."
@@ -84,13 +84,16 @@
         "./.."
       ],
       "assets": [
-        "../frontend/assets"
+        "../assets"
       ],
       "assets/*": [
-        "../frontend/assets/*"
+        "../assets/*"
       ],
       "public": [
-        "../frontend/public"
+        "../public"
+      ],
+      "public/*": [
+        "../public/*"
       ],
       "#vue-router": [
         "./vue-router"
@@ -105,11 +108,12 @@
   "include": [
     "./types/nitro-nuxt.d.ts",
     "../node_modules/@nuxtjs/tailwindcss/runtime/server",
+    "../node_modules/shadcn-nuxt/runtime/server",
     "../node_modules/@nuxt/devtools/runtime/server",
     "../node_modules/@nuxt/telemetry/runtime/server",
     "./types/nitro.d.ts",
     "../**/*",
-    "../frontend/server/**/*"
+    "../server/**/*"
   ],
   "exclude": [
     "../node_modules",

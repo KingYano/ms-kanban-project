@@ -31,11 +31,11 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue';
-import { useKanban } from '@/composables/composable';
-import ProjectList from '@/components/ProjectList/ProjectList.vue';
-import CategoryColumn from '@/components/CategoryColumn/CategoryColumn.vue';
-import TaskEditModal from '@/components/TaskEditModal/TaskEditModal.vue';
-import { Project } from '@/types/type';
+import { useKanban } from '@/frontend/composables/composable';
+import ProjectList from '@/frontend/components/ProjectList/ProjectList.vue';
+import CategoryColumn from '@/frontend/components/CategoryColumn/CategoryColumn.vue';
+import TaskEditModal from '@/frontend/components/TaskEditModal/TaskEditModal.vue';
+import { type Project } from '@/frontend/types/type';
 
 const {
   selectedProject,

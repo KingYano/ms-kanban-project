@@ -147,7 +147,7 @@ new Proxy(/* @__PURE__ */ Object.create(null), {
   }
 });
 
-const serverAssets = [{"baseName":"server","dir":"/Users/kinyano/Desktop/ms-kanban-project/frontend/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"/Users/kinyano/Desktop/ms-kanban-project/server/assets"}];
 
 const assets = createStorage();
 
@@ -160,7 +160,7 @@ const storage = createStorage({});
 storage.mount('/assets', assets);
 
 storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/kinyano/Desktop/ms-kanban-project","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/kinyano/Desktop/ms-kanban-project/frontend/server","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/kinyano/Desktop/ms-kanban-project/server","ignore":["**/node_modules/**","**/.git/**"]}));
 storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/kinyano/Desktop/ms-kanban-project/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
 storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/kinyano/Desktop/ms-kanban-project/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
 storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"/Users/kinyano/Desktop/ms-kanban-project/.data/kv","ignore":["**/node_modules/**","**/.git/**"]}));

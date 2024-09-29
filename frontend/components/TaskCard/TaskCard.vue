@@ -16,9 +16,9 @@
 </template>
 
 <script lang="ts" setup>
-import { PropType } from 'vue';
-import { Task } from '@/types/type';
-import { useKanban } from '@/composables/composable';
+import {type PropType } from 'vue';
+import { type Task } from '@/frontend/types/type';
+import { useKanban } from '@/frontend/composables/composable';
 
 const props = defineProps({
   task: {
