@@ -1,6 +1,6 @@
 <template>
   <div class="kanban-board">
-    <ProjectList @projectSelected="onProjectSelected" />
+    <List @projectSelected="onProjectSelected" />
     <div v-if="selectedProject" class="board-panel">
       <div class="board-header">
         <h2>{{ selectedProject.name }}</h2>
@@ -32,10 +32,10 @@
 <script lang="ts" setup>
 import { ref } from 'vue';
 import { useKanban } from '@/frontend/composables/composable';
-import ProjectList from '@/frontend/components/ProjectList/ProjectList.vue';
 import CategoryColumn from '@/frontend/components/CategoryColumn/CategoryColumn.vue';
 import TaskEditModal from '@/frontend/components/TaskEditModal/TaskEditModal.vue';
 import { type Project } from '@/frontend/types/type';
+import {List} from "~/frontend/components/Project";
 
 const {
   selectedProject,
