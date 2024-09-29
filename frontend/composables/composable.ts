@@ -17,6 +17,23 @@ export const useKanban = () => {
         }
     };
 
+    const deleteProject = (projectId: number) => {
+        projects.value = projects.value.filter(p => p.id !== projectId);
+        if (selectedProject.value?.id === projectId) {
+            selectedProject.value = null;
+        }
+    };
+
+    const updateProject = (projectId: number, newName: string) => {
+        const project = projects.value.find(p => p.id === projectId);
+        if (project) {
+            project.name = newName;
+            if (selectedProject.value?.id === projectId) {
+                selectedProject.value = { ...project };
+            }
+        }
+    };
+
     const selectProject = (project: Project) => {
         selectedProject.value = project;
     };
@@ -114,6 +131,8 @@ export const useKanban = () => {
         editingTask,
         draggedProject,
         addProject,
+        deleteProject,
+        updateProject,
         selectProject,
         addCategory,
         addTask,

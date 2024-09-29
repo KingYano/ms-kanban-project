@@ -74,7 +74,7 @@ const onDrop = (e: DragEvent, categoryId: number) => {
 };
 </script>
 
-<style scoped>
+<style>
 .kanban-board {
   display: flex;
   height: 100vh;
