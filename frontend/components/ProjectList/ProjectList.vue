@@ -3,7 +3,7 @@
     <h2>Mes projets :</h2>
     <div class="add-project">
       <input v-model="newProjectName" placeholder="Nouveau projet" />
-      <button @click="addProject">Ajouter</button>
+      <v-btn @click="addProject" color="primary">Ajouter</v-btn>
     </div>
     <div
         v-for="(project, index) in projects"

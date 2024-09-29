@@ -5,7 +5,10 @@ export default defineNuxtConfig({
   srcDir: 'frontend/',
 
   modules: ['@nuxtjs/tailwindcss'],
-
+  css: ['vuetify/styles'],
+  build: {
+    transpile: ['vuetify'],
+  },
   vite: {
     css: {
       preprocessorOptions: {
