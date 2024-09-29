@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@headlessui/vue": "^1.7.23",
     "mysql2": "^3.11.3",
     "nuxt": "^3.13.0",
     "vue": "latest",

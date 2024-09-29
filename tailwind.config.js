@@ -7,6 +7,7 @@ module.exports = {
     "./plugins/**/*.{js,ts}",
     "./app.vue",
     "./error.vue",
+    "./frontend/**/*.{js,vue,ts}",
   ],
   theme: {
     extend: {},
