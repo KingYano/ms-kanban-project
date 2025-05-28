@@ -1,1 +1,0 @@
-export { default } from "file:///Users/kinyano/Desktop/ms-kanban-project/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"
