@@ -67,15 +67,15 @@
 
 <script lang="ts" setup>
 import { ref, computed } from 'vue';
-import { type Project } from '@/frontend/types/type';
-import { useKanban } from '@/frontend/composables/composable';
-import { Button } from '@/components/ui/button';
+import { type Project } from '~/types/type';
+import { useKanban } from '~/composables/composable';
+import { Button } from '~/components/ui/button';
 import {
   DropdownMenu,
   DropdownMenuTrigger,
   DropdownMenuContent,
   DropdownMenuItem,
-} from '@/components/ui/dropdown-menu';
+} from '~/components/ui/dropdown-menu';
 import {
   AlertDialog,
   AlertDialogContent,
@@ -85,7 +85,7 @@ import {
   AlertDialogDescription,
   AlertDialogAction,
   AlertDialogCancel,
-} from '@/components/ui/alert-dialog';
+} from '~/components/ui/alert-dialog';
 
 const { projects, selectedProject, newProjectName, addProject, deleteProject, updateProject } = useKanban();
 

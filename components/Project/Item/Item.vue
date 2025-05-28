@@ -38,8 +38,8 @@
 <script lang="ts" setup>
 import { ref } from 'vue';
 import { Button } from '~/components/ui/button';
-import { type Project } from '~/frontend/types/type';
-import { Actions } from "~/frontend/components/Project";
+import { type Project } from '~/types/type';
+import { Actions } from "~/components/Project";
 
 const props = defineProps<{
   project: Project

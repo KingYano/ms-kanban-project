@@ -10,7 +10,7 @@
 </template>
 
 <script lang="ts" setup>
-import { Button } from '@/components/ui/button';
+import { Button } from '~/components/ui/button';
 
 defineProps<{
   newProjectName: string

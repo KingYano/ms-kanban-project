@@ -23,9 +23,9 @@
 
 <script lang="ts" setup>
 import { ref, type PropType, computed } from 'vue';
-import {type Category, type Task } from '@/frontend/types/type';
-import { useKanban } from '@/frontend/composables/composable';
-import TaskCard from '@/frontend/components/TaskCard/TaskCard.vue';
+import {type Category, type Task } from '~/types/type';
+import { useKanban } from '~/composables/composable';
+import TaskCard from '~/components/TaskCard/TaskCard.vue';
 
 const props = defineProps({
   category: {

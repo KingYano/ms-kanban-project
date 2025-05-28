@@ -33,9 +33,9 @@
 
 <script lang="ts" setup>
 import { ref, computed } from 'vue';
-import { type Project } from '~/frontend/types/type';
-import { useKanban } from '~/frontend/composables/composable';
-import {AddForm, DeleteDialog, Item} from "~/frontend/components/Project";
+import { type Project } from '~/types/type';
+import { useKanban } from '~/composables/composable';
+import {AddForm, DeleteDialog, Item} from "~/components/Project";
 
 const { projects, selectedProject, newProjectName, addProject, deleteProject, updateProject, reorderProjects } = useKanban();
 

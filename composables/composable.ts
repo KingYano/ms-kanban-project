@@ -1,5 +1,5 @@
 import { ref, type Ref } from 'vue';
-import type { Project, Category, Task } from '~/frontend/types/type';
+import type { Project, Category, Task } from '~/types/type';
 
 const projects: Ref<Project[]> = ref([]);
 const selectedProject: Ref<Project | null> = ref(null);
