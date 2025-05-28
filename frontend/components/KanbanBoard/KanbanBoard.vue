@@ -30,7 +30,7 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue';
+// import { ref } from 'vue';
 import { useKanban } from '@/frontend/composables/composable';
 import CategoryColumn from '@/frontend/components/CategoryColumn/CategoryColumn.vue';
 import TaskEditModal from '@/frontend/components/TaskEditModal/TaskEditModal.vue';
